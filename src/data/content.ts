@@ -7,7 +7,7 @@ export const profile = {
     'I build scalable, high-performance web applications using React, TypeScript, and modern frontend technologies. Passionate about creating intuitive user experiences, writing clean code, and delivering products that make a real business impact.',
   location: 'Remote · IST (UTC+5:30)',
   email: 'karunakaran.selvam@outlook.com',
-  resume: '/resume.pdf',
+  resume: '/Karunakaran_Selvam_CV.pdf',
 };
 
 export const socials: SocialLink[] = [
@@ -17,7 +17,7 @@ export const socials: SocialLink[] = [
     href: 'https://www.linkedin.com/in/karunakaran-selvam/',
   },
   { label: 'WhatsApp', href: 'https://wa.me/919876543210' },
-  { label: 'Resume', href: '#' },
+  { label: 'Resume', href: '/Karunakaran_Selvam_CV.pdf' },
 ];
 
 export const projects: Project[] = [

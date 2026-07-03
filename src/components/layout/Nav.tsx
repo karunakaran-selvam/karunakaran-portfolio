@@ -54,15 +54,15 @@ export const Nav = () => {
             ))}
           </ul>
 
-          <button
-            className="flex bg-surface-2 font-mono text-xs p-3 py-1.5 rounded-md cursor-pointer transition-colors items-center justify-center gap-2"
-            onClick={() => {
-              window.open(profile.resume, '_blank');
-            }}
+          <Button
+            href={profile.resume}
+            download
+            variant="outline"
+            className="flex bg-surface-2 font-mono text-xs p-3 py-1.5 border-none! hover:bg-surface-2! rounded-md cursor-pointer transition-colors items-center justify-center gap-2"
           >
             <span className="text-amber pt-1">Resume</span>
             <DownloadIcon className=" text-amber" size={15} />
-          </button>
+          </Button>
         </div>
 
         <button
