@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #0b0e13;
+  --color-surface: #12161d;
+  --color-surface-2: #171c25;
+  --color-line: #232a35;
+  --color-text: #e7e9ec;
+  --color-muted: #8a93a1;
+  --color-amber: #f2a340;
+  --color-violet: #7c6ff0;
+
+  --font-display:
+    'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --font-body: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-ink);
+}
+
+.gutter {
+  position: relative;
+}
+.gutter::before {
+  content: attr(data-line);
+  position: absolute;
+  left: -2.75rem;
+  top: 0.15em;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-line);
+}
+@media (max-width: 768px) {
+  .gutter::before {
+    display: none;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
