@@ -16,7 +16,7 @@ export const socials: SocialLink[] = [
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/karunakaran-selvam/',
   },
-  { label: 'WhatsApp', href: 'https://wa.me/919876543210' },
+  { label: 'WhatsApp', href: 'https://wa.me/+919566622876' },
   { label: 'Resume', href: '/Karunakaran_Selvam_CV.pdf' },
 ];
 
